@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
 
     #  質問詳細ページ表示
     def show
-        
+        @question = Question.find(params[:id])
     end
 
     #　質問の作成
